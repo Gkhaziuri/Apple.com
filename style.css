@@ -32,6 +32,7 @@
     padding-bottom: 8px;
     font-size: 17px;
     font-family: 'SF Pro Display', sans-serif;
+    cursor: pointer;
                                                 
 }
 .header-block input {
@@ -57,6 +58,7 @@
     display: flex;
     justify-content: center;
     background: rgb(227, 225, 225);
+    width: 100%;
 }
 .navigation ul {
     display: flex;
@@ -70,7 +72,7 @@
     list-style-type: none;
     margin-right: 30px;
     font-family: 'SF Pro Display', sans-serif;
-                                                
+                                            
 }
 .products-block {
     padding: 10px;
@@ -81,51 +83,38 @@
     justify-content: center;
 }
 .products-nav li {
-    margin-right: 50px;
-    display: block;
+    margin-right: 40px;
     list-style-type: none;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .products-nav a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .name {
-    margin-left: -15px;
+    margin-top: -10px;
     text-decoration: none;
     color: black;
     font-size: 14px;
     font-weight: 400;
     font-family: 'SF Pro Display', sans-serif;
 }
-.name-airpods {
-    margin-left: -5px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'SF Pro Display', sans-serif;
-}
-.name-airtag {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'SF Pro Display', sans-serif;
-}
-.name-ios {
-    margin-left: 4px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'SF Pro Display', sans-serif;
+.name:hover {
+    color: #0066cc;
 }
 .new-span {
     color: #bf4800;
-    margin-left: 7px;
     font-size: 12px;
     font-weight: 400;
     font-family: 'SF Pro Display', sans-serif;
+    margin-top: -10px;
 
 }
 .trade-inn-block {
@@ -134,7 +123,6 @@
     justify-content: center;
     padding: 20px;
     font-family: 'SF Pro Display', sans-serif;
-
 }
 .trade-inn-block p {
     font-size: 21px;
@@ -148,6 +136,7 @@
 }
 .trade-inn-block a:hover {
    color: #0883fe;
+   text-decoration: underline;
 }
 .tittle-block{
     padding-top: 60px;
@@ -174,6 +163,9 @@
 .options {
     margin-top: 20px;
     font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .options button {
     background: #0071e3;
@@ -214,12 +206,26 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
 }
 .se-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
     text-align: center;
     margin-top: 15%;
     margin-left: 15%;
+}
+.options {
+    display: flex;
+}
+.options button {
+    cursor: pointer;
+}
+.options a:hover {
+    text-decoration: underline;
 }
 .se-info span {
     font-size: 48px;
@@ -233,7 +239,10 @@
     padding-bottom: 15px;
     font-family: 'SF Pro Display', sans-serif;
 }
-
+.se-info a {
+    display: flex;
+    align-items: center;
+}
 .tour-block {
     position: relative;
     display: flex;
@@ -269,6 +278,7 @@
     border: none;
     padding: 8px 16px;
     border-radius: 980px;
+    cursor: pointer;
 }
 .film-button:hover {
     background-color: #a9adb2;
@@ -298,6 +308,12 @@
     font-size: 12px;
     font-family: 'SF Pro Display', sans-serif;
 }
+.iphones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;   
+}
 .iphone-info {
     margin-top: 20px;
     margin-left: -120px;
@@ -314,7 +330,6 @@
 }
 
 .price-options {
-    text-align: center;
     margin-top: 25px;
     margin-left: -100px;
 }
@@ -328,6 +343,7 @@
     margin-right: 20px;
     font-size: 12px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .price-options span {
     margin-left: -16px;
@@ -342,4 +358,235 @@
     font-family: 'SF Pro Display', sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+.price-options a:hover {
+    text-decoration: underline;
+}
+.detailed-information {
+    display: grid;
+    grid-area: details;
+    grid: "details details details details"
+          "details details details details"
+          "details details details details"
+          "details details details details"
+          "details details details details"
+          "details details details details";
+    row-gap: 30px;
+    column-gap: 55px;
+    padding: 0 160px;
+    /* align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 180px; */
+    
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 80px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.details span {
+    margin-bottom: 10px; 
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.details img {
+    margin-bottom: 10px;
+}
+.display-size {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.compare-shop {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.compare-shop a{
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 400;
+    color: #06c;
+    font-family: 'SF Pro Display', sans-serif;
+
+}
+.compare-shop a:hover {
+    text-decoration: underline;
+}
+.compare-shop img {
+    margin-right: 50px;
+}
+.buying-options {
+    text-align: center;
+    background-color: rgb(241, 237, 237);
+}
+.buying-options h3 {
+    font-size: 56px;
+    font-weight: 600;
+    font-family: 'SF Pro Display', sans-serif;
+    padding: 50px;
+}
+.save-on-iphone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.savings {
+    background-color: white;
+    max-width: 453px;
+    min-width: 453px;
+    padding: 50px;
+    min-height: 717px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.savings p {
+    font-size: 24px;
+    font-weight: 600;
+    max-width: 220px;
+    font-family: 'SF Pro Display', sans-serif;
+    letter-spacing: -0.003em;
+    margin-bottom: 10px;
+}
+.savings img {
+    margin-top: 50px;
+    text-align: center;
+}
+.applecard {
+    width: 250px;
+    margin-bottom: -55px;
+}
+.savings span {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+    margin-bottom: 20px;
+}
+.apple-card-info {
+    margin-top: -55px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.company-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.savings a {
+    text-decoration: none;
+    color: #06c;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+.savings a:hover {
+    text-decoration: underline;
+}
+.why-apple {
+    margin-top: 15px;
+    position: relative;
+}
+.why-apple-info h4 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.why-apple-info p {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+    max-width: 420px;
+}
+.why-apple-info a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #06c;
+    font-family: 'SF Pro Display', sans-serif;
+    margin-top: 20px;
+}
+.why-apple-info {
+    position: absolute;
+    /* top: 50%; */
+    margin-top: 120px;
+    left: 35%;
+    transform: translate(-30% -30%);
+    z-index: 2;
+}
+.why-apple-info p,h4 {
+    max-width: 420px;
+}
+.why-apple-info a:hover {
+    text-decoration: underline;
+}
+.accessories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured-acc {
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-width: 80%;
+
+}
+.featured-acc h5 {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'SF Pro Display', sans-serif;
+}
+.featured-acc a {
+    color: #06c;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.featured-acc a:hover {
+    text-decoration: underline;
+}
+.featured-acc p {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+    max-width: 300px;
+}
+
+@media (max-width: 1024px) {
+    .header-block {
+        display: none;
+    }
+    .navigation {
+        width: 100%;
+    }
+    .products-nav ul {
+        overflow: x;
+    }
 }
